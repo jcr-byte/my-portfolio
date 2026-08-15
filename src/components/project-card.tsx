@@ -17,7 +17,11 @@ export function ProjectCard({ project }: { project: Project }) {
       }`}
     >
       <div
-        className={`relative flex aspect-4/3 items-center justify-center overflow-hidden rounded-md border border-dashed border-edge-hover p-8 transition-colors duration-250 group-hover:border-accent ${project.gradient}`}
+        className={`relative flex aspect-4/3 items-center justify-center overflow-hidden rounded-md border border-edge-hover p-8 transition-colors duration-250 group-hover:border-accent ${
+          // dashed reads as "nothing here yet" — right for an empty panel,
+          // wrong once the panel holds real artwork
+          project.logo ? "border-solid" : "border-dashed"
+        } ${project.gradient}`}
       >
         {project.logo ? (
           <Image
