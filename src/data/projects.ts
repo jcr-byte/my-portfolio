@@ -32,22 +32,24 @@ export const projects: Project[] = [
     },
     gradient: "bg-linear-135 from-[#12181c] to-bg to-60%",
   },
-  {
-    title: "PROJECT TWO",
-    tagline: "One line describing the real problem it solves",
-    date: "Month 2025",
-    liveHref: "#",
-    sourceHref: "#",
-    tags: ["TypeScript", "Next.js", "Redis"],
-    gradient: "bg-linear-135 from-[#141810] to-bg to-60%",
-  },
-  {
-    title: "PROJECT THREE",
-    tagline: "One line describing the real problem it solves",
-    date: "Month 2025",
-    liveHref: "#",
-    sourceHref: "#",
-    tags: ["Vue", "Express", "WebSockets"],
-    gradient: "bg-linear-135 from-[#171512] to-bg to-60%",
-  },
+  // Placeholder slots kept for the next two projects. Uncomment and fill in
+  // once they exist — the card layout needs no changes.
+  // {
+  //   title: "PROJECT TWO",
+  //   tagline: "One line describing the real problem it solves",
+  //   date: "Month 2025",
+  //   liveHref: "#",
+  //   sourceHref: "#",
+  //   tags: ["TypeScript", "Next.js", "Redis"],
+  //   gradient: "bg-linear-135 from-[#141810] to-bg to-60%",
+  // },
+  // {
+  //   title: "PROJECT THREE",
+  //   tagline: "One line describing the real problem it solves",
+  //   date: "Month 2025",
+  //   liveHref: "#",
+  //   sourceHref: "#",
+  //   tags: ["Vue", "Express", "WebSockets"],
+  //   gradient: "bg-linear-135 from-[#171512] to-bg to-60%",
+  // },
 ];

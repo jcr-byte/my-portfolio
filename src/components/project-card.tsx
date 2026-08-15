@@ -40,19 +40,19 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div>
-        {titleHref ? (
-          <a
-            href={titleHref}
-            className="mb-2.5 inline-block text-[19px] font-bold tracking-[-0.005em] underline decoration-edge-hover underline-offset-[5px] transition-colors duration-200 hover:decoration-accent"
-            {...externalLinkProps(titleHref)}
-          >
-            {project.title}
-          </a>
-        ) : (
-          <h2 className="mb-2.5 text-[19px] font-bold tracking-[-0.005em]">
-            {project.title}
-          </h2>
-        )}
+        <h3 className="mb-2.5 text-[19px] font-bold tracking-[-0.005em]">
+          {titleHref ? (
+            <a
+              href={titleHref}
+              className="inline-block underline decoration-edge-hover underline-offset-[5px] transition-colors duration-200 hover:decoration-accent"
+              {...externalLinkProps(titleHref)}
+            >
+              {project.title}
+            </a>
+          ) : (
+            project.title
+          )}
+        </h3>
 
         <p className="mb-2.5 text-sm text-muted">{project.tagline}</p>
 

@@ -8,7 +8,11 @@ export default function Home() {
     <div className="mx-auto w-full max-w-[1120px] px-[22px] md:px-10">
       <SiteHeader />
 
-      <main id="projects" className="pt-5 pb-10">
+      <main id="projects" className="pt-8 pb-10">
+        <h2 className="text-[11px] tracking-[0.08em] text-muted uppercase">
+          Projects
+        </h2>
+
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
